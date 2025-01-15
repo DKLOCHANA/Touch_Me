@@ -8,13 +8,13 @@ class CategorySelectionTile extends StatelessWidget {
   final VoidCallback onTap;
 
   const CategorySelectionTile({
-    Key? key,
+    super.key,
     required this.imagePath,
     required this.title,
     required this.subtitle,
     required this.isSelected,
     required this.onTap,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -60,7 +60,7 @@ class CategorySelectionTile extends StatelessWidget {
               const Spacer(),
               Icon(
                 isSelected ? Icons.check_circle : Icons.radio_button_unchecked,
-                color: isSelected ? Color(0xFF8D2E55) : Colors.grey,
+                color: isSelected ? const Color(0xFF8D2E55) : Colors.grey,
               ),
             ],
           ),

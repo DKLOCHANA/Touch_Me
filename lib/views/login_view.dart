@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:touch_me/widgets/register_button.dart';
 
 import '../widgets/auth_textfield.dart';
+import '../widgets/register_button.dart';
 import '../widgets/sociallogin_button.dart';
 
-class CreateAccountScreen extends StatelessWidget {
-  const CreateAccountScreen({Key? key}) : super(key: key);
+class LoginViewPage extends StatelessWidget {
+  const LoginViewPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -34,7 +34,7 @@ class CreateAccountScreen extends StatelessWidget {
               ),
               SizedBox(height: screenHeight * 0.02),
               Text(
-                'Create an Account',
+                'Welcome Back!',
                 style: TextStyle(
                   color: const Color(0xFF8D2E55),
                   fontSize: screenHeight * 0.035,
@@ -53,15 +53,24 @@ class CreateAccountScreen extends StatelessWidget {
                 label: 'Password',
                 isPassword: true,
               ),
-              SizedBox(height: screenHeight * 0.025),
-              const AuthInputField(
-                icon: 'assets/images/Group 2.png',
-                label: 'Confirm Password',
-                isPassword: true,
+              Row(
+                mainAxisAlignment: MainAxisAlignment.end,
+                children: [
+                  TextButton(
+                    onPressed: () {},
+                    child: Text(
+                      'Forgot Password?',
+                      style: TextStyle(
+                        fontSize: screenHeight * 0.018,
+                        fontWeight: FontWeight.w600,
+                      ),
+                    ),
+                  ),
+                ],
               ),
-              SizedBox(height: screenHeight * 0.04),
+              SizedBox(height: screenHeight * 0.02),
               RegisterButton(
-                buttonName: "Create Account",
+                buttonName: "Login",
                 onPressed: () {},
               ),
               SizedBox(height: screenHeight * 0.04),
@@ -75,12 +84,11 @@ class CreateAccountScreen extends StatelessWidget {
               ),
               SizedBox(height: screenHeight * 0.02),
               const SocialLoginButton(),
-              SizedBox(height: screenHeight * 0.035),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Text(
-                    'I Already Have an Account',
+                    'Create An Account',
                     style: TextStyle(
                       fontSize: screenHeight * 0.018,
                       fontWeight: FontWeight.w400,
@@ -90,7 +98,7 @@ class CreateAccountScreen extends StatelessWidget {
                   TextButton(
                     onPressed: () {},
                     child: Text(
-                      'Login',
+                      'Sign Up',
                       style: TextStyle(
                         color: const Color(0xFF8D2E55),
                         fontSize: screenHeight * 0.018,

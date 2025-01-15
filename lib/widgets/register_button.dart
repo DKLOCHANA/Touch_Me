@@ -16,7 +16,7 @@ class RegisterButton extends StatelessWidget {
           // Navigate to the next page
         },
         style: ElevatedButton.styleFrom(
-          backgroundColor: Color(0xFF3A0B37), // Button color
+          backgroundColor: const Color(0xFF3A0B37), // Button color
           padding: const EdgeInsets.symmetric(vertical: 15),
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(28),
@@ -24,7 +24,7 @@ class RegisterButton extends StatelessWidget {
         ),
         child: Text(
           buttonName,
-          style: TextStyle(fontSize: 16, color: Colors.white),
+          style: const TextStyle(fontSize: 16, color: Colors.white),
         ),
       ),
     );

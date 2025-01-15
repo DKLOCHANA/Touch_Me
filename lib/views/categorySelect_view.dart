@@ -30,7 +30,7 @@ class _SelectCategoryPageState extends State<SelectCategoryPage> {
                     const TextStyle(fontSize: 24, fontWeight: FontWeight.bold)),
             const SizedBox(height: 10),
             const Text('Welcome to the kingdom of Beauty',
-                style: const TextStyle(fontSize: 16, color: Colors.grey)),
+                style: TextStyle(fontSize: 16, color: Colors.grey)),
             Container(
               height: MediaQuery.of(context).size.height * 0.35,
               decoration: const BoxDecoration(
@@ -94,7 +94,7 @@ class _SelectCategoryPageState extends State<SelectCategoryPage> {
             mainAxisSize: MainAxisSize.min,
             children: [
               // Page Indicator
-              Text(
+              const Text(
                 "Once you are done selecting your profession, proceed by clicking on the next button",
                 style: TextStyle(fontSize: 16, color: Color(0xFF3A0B37)),
               ),
