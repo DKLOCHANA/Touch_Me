@@ -18,7 +18,7 @@ class Searchbar extends StatelessWidget {
               hintText: "Search Your Service",
               prefixIcon: Icon(Icons.search),
               border: InputBorder.none,
-              contentPadding: EdgeInsets.symmetric(vertical: 15),
+              contentPadding: EdgeInsets.symmetric(vertical: 10),
             ),
           ),
         ],
