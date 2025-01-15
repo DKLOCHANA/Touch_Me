@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import '../widgets/bottomnav.dart';
 import '../widgets/carousal.dart';
 import '../widgets/circuler_carousel.dart';
+import '../widgets/listview.dart';
 import '../widgets/searchbar.dart';
 import '../widgets/sectionheader.dart';
 
@@ -105,6 +106,11 @@ class CustomerhomeViewPage extends StatelessWidget {
             Sectionheader(header: "Recommended"),
             Carousal(),
             Sectionheader(header: "Nearest Saloons"),
+            // Ensure proper size for ListView
+            SizedBox(
+              height: screenHeight / 3, // Adjust height as needed
+              child: NearestSaloons(),
+            ),
           ],
         ),
       ),
